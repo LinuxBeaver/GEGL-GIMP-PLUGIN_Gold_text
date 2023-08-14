@@ -8,7 +8,8 @@ Preview 2
 ![image](https://github.com/LinuxBeaver/Gimp_Gold_Text_Plugin/assets/78667207/69f6003b-a889-4308-9341-2dda40a44c71)
 
 
-Location to put Binaries (THEY DO NOT GO IN THE NORMAL PLUGINS FOLDER)
+## Location to put Binaries 
+(THEY DO NOT GO IN THE NORMAL PLUGINS FOLDER)
 
 ### Windows
  C:\Users\(USERNAME)\AppData\Local\gegl-0.4\plug-ins
@@ -51,7 +52,7 @@ meson setup --buildtype=release build
 ninja -C build
 ```
 
-## More previews of this based Gimp plugin
+### More previews of this based Gimp plugin
 
 Preview 3
 ![image](https://github.com/LinuxBeaver/Gimp_Gold_Text_Plugin/assets/78667207/272f5fe5-8625-4c2c-854d-26ff5a0c1ae0)
