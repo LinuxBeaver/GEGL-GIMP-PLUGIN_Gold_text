@@ -1,3 +1,10 @@
+**WARNING**
+If you have an old version of my GEGL Effects Layer Effects plugin before May 2023 this will break GEGL Effects, once this plugin is installed. Check to make sure the version of GEGL Effects you are using was released May 2023 or onward.  If not update here to the latest version.
+https://github.com/LinuxBeaver/GEGL-Effects---Layer-Effects-in-Gimp-using-GEGL/releases
+
+To confirm test if GEGL Effects is working after the update, install Gold Text binaries and then see if “inner glow and or bevel” in GEGL Effects still work. If they are not, the update in the link above will fix GEGL Effects.
+
+
 ## Gold Text.
 A Gimp Plugin where GEGL transforms plain text into Gold. Go to releases section for Binaries. 
 
