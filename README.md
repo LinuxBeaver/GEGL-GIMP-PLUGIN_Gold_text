@@ -7,6 +7,7 @@ To confirm test if GEGL Effects is working after the update, install Gold Text b
 
 ## Gold Text.
 A Gimp Plugin where GEGL transforms plain text into Gold. Go to releases section for Binaries. 
+https://github.com/LinuxBeaver/Gimp_Gold_Text_Plugin/releases
 
 Preview 1 
 ![image](https://github.com/LinuxBeaver/Gimp_Gold_Text_Plugin/assets/78667207/b74606ce-8441-4ead-811e-f38b49c65938)
