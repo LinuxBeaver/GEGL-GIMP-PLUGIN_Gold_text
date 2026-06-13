@@ -65,7 +65,7 @@ enum_end (MedianBlurNeighborhoodcbgold)
 property_boolean (pluginpolicy, _("Enable or Disable Plugin"), TRUE)
   description    (_("Hidden operation to disable Gold Text incase another plugin needs to call it. If you are a GEGL plugin developer you can call this plugin and have a disable checkbox easy this way."))
     ui_meta     ("role", "output-extent")
- /*Output extent is code to hide this option from Gimp's GUI*/
+ /*Output extent is code to hide this option from Gimpꞌs GUI*/
 
 
 property_enum (medianshape, _("Choose Internal Median Shape"),
@@ -96,7 +96,7 @@ property_int  (medianradius, _("Internal Median Blur Radius"), 3)
   value_range (0, 10)
   ui_range    (0, 10)
   ui_meta     ("unit", "pixel-distance")
-  description (_("Median Blur's Radius for wideness control. Lower values make the bevel more wide, higher values make the bevel less wide."))
+  description (_("Median Blurꞌs Radius for wideness control. Lower values make the bevel more wide, higher values make the bevel less wide."))
 
 
 property_double (huerotate, _("Hue Rotation -0 resets"),  0.0)
@@ -174,7 +174,7 @@ GeglProperties *o = GEGL_PROPERTIES (operation);
 
   input    = gegl_node_get_input_proxy (gegl, "input");
   output   = gegl_node_get_output_proxy (gegl, "output");
-  GeglColor *white_embedded_for_gold = gegl_color_new ("#ffffff"); /*The color white is being embedded and feed to color-overlay's value property.*/
+  GeglColor *white_embedded_for_gold = gegl_color_new ("#ffffff"); /*The color white is being embedded and feed to color-overlayꞌs value property.*/
 
   white   = gegl_node_new_child (gegl,
                                   "operation", "gegl:color-overlay", "value", white_embedded_for_gold,  
@@ -191,7 +191,7 @@ GeglProperties *o = GEGL_PROPERTIES (operation);
 
   fix    = gegl_node_new_child (gegl,
                                   "operation", "gegl:median-blur", "radius", 0, "abyss-policy",     GEGL_ABYSS_NONE,
-                                  NULL); /* Median Blur at zero is used to fix all sorts of bugs in GEGL Graph. I don't know why
+                                  NULL); /* Median Blur at zero is used to fix all sorts of bugs in GEGL Graph. I donꞌt know why
                                             but it has a interesting property that solves several known bugs in GEGL. It is 
                                             at 0 so it makes no changes to the image. In this case it is solving a unique
                                             bug relating to hue rotation being darker then usual. */
